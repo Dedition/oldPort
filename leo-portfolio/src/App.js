@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
+  const [menuText, setMenuText] = useState("Home");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Homepage">
+      <AnimatePresence exitBeforeEnter>
+        {/* INPUT MENU PROVIDER HERE */}
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" exact />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/work" element={<Work />} />
+        </Routes>
+      </AnimatePresence>
+      {/* FINISH MENU PROVIDER HERE */}
     </div>
   );
 }
