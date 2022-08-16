@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MenuContext } from "../../context/MenuContext";
-import { MenuList, MenuPage } from "../MenuPage";
+import MenuList from "../MenuPage/MenuList";
+import MenuPage from "../MenuPage/MenuPage";
 
 
 const Home = () => {
