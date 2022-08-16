@@ -6,11 +6,11 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 //*                     Files & Components
-import About from './components/AboutPage/About';
 import Home from './components/HomePage/Home'
+import About from './components/AboutPage/About';
 import Projects from './components/ProjectsPage/Projects';
-import Contact from './components/ContactPage/Contact';
 import Work from './components/WorkPage/Work';
+import Contact from './components/ContactPage/Contact';
 import NotFound from './components/NotFoundPage/NotFound';
 
 //*                           Context
@@ -29,8 +29,8 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
