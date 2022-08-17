@@ -1,12 +1,12 @@
 //*                           React
 import { useState } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 //*                       React Libraries
 import { AnimatePresence } from "framer-motion";
 
 //*                     Files & Components
-import Home from './components/HomePage/Home'
+import Home from './components/HomePage/Home.js'
 import About from './components/AboutPage/About';
 import Projects from './components/ProjectsPage/Projects';
 import Work from './components/WorkPage/Work';
@@ -18,15 +18,22 @@ import { MenuContext } from "./context/MenuContext";
 
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   const [menuText, setMenuText] = useState("Home");
 
   return (
     <BrowserRouter>
       <MenuContext.Provider value={{ menuText, setMenuText }}>
         <AnimatePresence exitBeforeEnter>
-          <Routes location={location} key={location.pathname}>
-            <Route path={["/", "/*"]} element={<Home />} />
+          <Routes>
+            {["/", "/*"].map((path, idx) => {
+              return (
+                <Route path={path} element={
+                  <Home />}
+                  key={idx}
+                />
+              );
+            })}
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
