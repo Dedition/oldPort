@@ -1,0 +1,182 @@
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes menuTextHome {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes menuTextHome {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes menuTextList {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes menuTextList {
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.menuTextListAnimation {
+    animation: menuTextHome;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.Homepage__container {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5px;
+    border: 0.1rem solid #252525;
+    padding: 0;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .MenuList__list {
+        width: 50%;
+        list-style-type: none;
+
+        @media (max-width: 768px) {
+            align-self: center;
+            width: 90%;
+            margin: 0;
+        }
+
+        li {
+            font-size: 2.4rem;
+            font-family: "Montserrat-regular", sans-serif;
+            margin-bottom: 5rem;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                width: 75%;
+                text-align: center;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            .MenuList__indicator {
+                background-color: $redIndicator;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 10px;
+                animation: blink-animation 1s steps(2, start) infinite;
+                -webkit-animation: blink-animation 1s steps(2, start) infinite;
+
+                @media (max-width: 768px) {
+                    display: none;
+                    visibility: hidden;
+                    position: absolute;
+                }
+            }
+
+            .MenuList__indicator--hidden {
+                background-color: $redIndicator;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 10px;
+                visibility: hidden;
+
+                @media (max-width: 768px) {
+                    display: none;
+                    visibility: hidden;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .MenuPage__container {
+        width: 40vw;
+        font-family: "Montserrat-Light", sans-serif;
+        font-size: 2rem;
+        position: relative;
+        bottom: 5%;
+        line-height: 1.5;
+
+        @media (max-width: 768px) {
+            display: none;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        // opacity: 0;
+        // transform: translateY(100%);
+    }
+}
+
+.primaryText,
+.secondaryText {
+    animation: menuTextHome;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @media (max-width: 768px) {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+}
