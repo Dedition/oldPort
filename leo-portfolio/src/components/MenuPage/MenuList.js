@@ -45,8 +45,8 @@ const MenuList = () => {
         <div className="MenuList">
             <ul className="MenuList__list">
                 <li
-                    onMouseEnter={[handleAboutHover, setMenuText("About")]}
-                    onMouseLeave={[handleAboutHoverExit, setMenuText("")]}
+                    onMouseEnter={() => setMenuText("Home")}
+                    onMouseLeave={() => setMenuText("")}
                     className="MenuList__item"
                 >
                     <Link to="/about" className="MenuList__link">
@@ -64,8 +64,8 @@ const MenuList = () => {
                     <div className={isAboutHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
                 </li>
                 <li
-                    onMouseEnter={[handleWorkHover, setMenuText("Work")]}
-                    onMouseLeave={[handleWorkHoverExit, setMenuText("")]}
+                    onMouseEnter={() => setMenuText("Projects")}
+                    onMouseLeave={() => setMenuText("")}
                     className="MenuList__item"
                 >
                     <Link to="/work" className="MenuList__link">
@@ -82,8 +82,8 @@ const MenuList = () => {
                     <div className={isWorkHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
                 </li>
                 <li
-                    onMouseEnter={[handleSkillHover, setMenuText("Skills")]}
-                    onMouseLeave={[handleSkillHoverExit, setMenuText("")]}
+                    onMouseEnter={() => setMenuText("Skills")}
+                    onMouseLeave={() => setMenuText("")}
                     className="MenuList__item"
                 >
                     <Link to="/skills" className="MenuList__link">
@@ -101,8 +101,8 @@ const MenuList = () => {
                 </li>
                 <div className={isContactHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
                 <li
-                    onMouseEnter={[handleProjectHover, setMenuText("Projects")]}
-                    onMouseLeave={[handleProjectHoverExit, setMenuText("")]}
+                    onMouseEnter={() => setMenuText("Contact")}
+                    onMouseLeave={() => setMenuText("")}
                     className="MenuList__item"
                 >
                     <Link to="/projects" className="MenuList__link">
@@ -119,8 +119,8 @@ const MenuList = () => {
                     <div className={isProjectHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
                 </li>
                 <li
-                    onMouseEnter={[handleContactHover, setMenuText("Contact")]}
-                    onMouseLeave={[handleContactHoverExit, setMenuText("")]}
+                    onMouseEnter={() => setMenuText("Contact")}
+                    onMouseLeave={() => setMenuText("")}
                     className="MenuList__item"
                 >
                     <Link to="/contact" className="MenuList__link">

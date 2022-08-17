@@ -12,7 +12,6 @@ import Projects from './components/ProjectsPage/Projects';
 import Work from './components/WorkPage/Work';
 import Contact from './components/ContactPage/Contact';
 import Navbar from "./components/NavbarPage/Navbar.js";
-// import NotFound from './components/NotFoundPage/NotFound';
 
 //*                           Context
 import { MenuContext } from "./context/MenuContext";
@@ -22,7 +21,6 @@ import "./styles/index.scss";
 
 
 function App() {
-  // const location = useLocation();
   const [menuText, setMenuText] = useState("Home");
 
   return (
@@ -43,7 +41,6 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </AnimatePresence>
       </MenuContext.Provider>
