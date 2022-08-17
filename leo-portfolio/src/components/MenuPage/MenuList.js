@@ -45,22 +45,23 @@ const MenuList = () => {
         <div className="MenuList">
             <ul className="MenuList__list">
                 <li
-                    onMouseEnter={[handleProjectHover, setMenuText("Projects")]}
-                    onMouseLeave={[handleProjectHoverExit, setMenuText("")]}
+                    onMouseEnter={[handleAboutHover, setMenuText("About")]}
+                    onMouseLeave={[handleAboutHoverExit, setMenuText("")]}
                     className="MenuList__item"
                 >
-                    <Link to="/projects" className="MenuList__link">
-                        {isProjectHovered ? (
+                    <Link to="/about" className="MenuList__link">
+                        {isAboutHovered ? (
                             <p className="primaryText menuTextListAnimation">
-                                Projects
+                                About
                             </p>
                         ) : (
                             <p className="secondaryText menuTextListAnimation">
-                                Projects
+                                About
                             </p>
-                        )}
+                        )
+                        }
                     </Link>
-                    <div className={isProjectHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
+                    <div className={isAboutHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
                 </li>
                 <li
                     onMouseEnter={[handleWorkHover, setMenuText("Work")]}
@@ -81,43 +82,6 @@ const MenuList = () => {
                     <div className={isWorkHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
                 </li>
                 <li
-                    onMouseEnter={[handleContactHover, setMenuText("Contact")]}
-                    onMouseLeave={[handleContactHoverExit, setMenuText("")]}
-                    className="MenuList__item"
-                >
-                    <Link to="/contact" className="MenuList__link">
-                        {isContactHovered ? (
-                            <p className="primaryText menuTextListAnimation">
-                                Contact
-                            </p>
-                        ) : (
-                            <p className="secondaryText menuTextListAnimation">
-                                Contact
-                            </p>
-                        )}
-                    </Link>
-                    <div className={isContactHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
-                </li>
-                <li
-                    onMouseEnter={[handleAboutHover, setMenuText("About")]}
-                    onMouseLeave={[handleAboutHoverExit, setMenuText("")]}
-                    className="MenuList__item"
-                >
-                    <Link to="/about" className="MenuList__link">
-                        {isAboutHovered ? (
-                            <p className="primaryText menuTextListAnimation">
-                                About
-                            </p>
-                        ) : (
-                            <p className="secondaryText menuTextListAnimation">
-                                About
-                            </p>
-                        )
-                        }
-                    </Link>
-                    <div className={isAboutHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
-                </li>
-                <li
                     onMouseEnter={[handleSkillHover, setMenuText("Skills")]}
                     onMouseLeave={[handleSkillHoverExit, setMenuText("")]}
                     className="MenuList__item"
@@ -134,6 +98,42 @@ const MenuList = () => {
                         )}
                     </Link>
                     <div className={isSkillHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
+                </li>
+                <div className={isContactHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
+                <li
+                    onMouseEnter={[handleProjectHover, setMenuText("Projects")]}
+                    onMouseLeave={[handleProjectHoverExit, setMenuText("")]}
+                    className="MenuList__item"
+                >
+                    <Link to="/projects" className="MenuList__link">
+                        {isProjectHovered ? (
+                            <p className="primaryText menuTextListAnimation">
+                                Projects
+                            </p>
+                        ) : (
+                            <p className="secondaryText menuTextListAnimation">
+                                Projects
+                            </p>
+                        )}
+                    </Link>
+                    <div className={isProjectHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
+                </li>
+                <li
+                    onMouseEnter={[handleContactHover, setMenuText("Contact")]}
+                    onMouseLeave={[handleContactHoverExit, setMenuText("")]}
+                    className="MenuList__item"
+                >
+                    <Link to="/contact" className="MenuList__link">
+                        {isContactHovered ? (
+                            <p className="primaryText menuTextListAnimation">
+                                Contact
+                            </p>
+                        ) : (
+                            <p className="secondaryText menuTextListAnimation">
+                                Contact
+                            </p>
+                        )}
+                    </Link>
                 </li>
             </ul>
         </div>
