@@ -1,6 +1,6 @@
 //*                           React
 import { useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
 //*                       React Libraries
 import { AnimatePresence } from "framer-motion";
@@ -22,11 +22,11 @@ function App() {
   const [menuText, setMenuText] = useState("Home");
 
   return (
-    <div className="Homepage">
+    <BrowserRouter>
       <MenuContext.Provider value={{ menuText, setMenuText }}>
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
-            <Route path="/" exact element={<Home />} />
+            <Route path={["/", "/*"]} element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
@@ -35,7 +35,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </MenuContext.Provider>
-    </div>
+    </BrowserRouter>
   );
 }
 
