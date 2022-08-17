@@ -11,6 +11,7 @@ import About from './components/AboutPage/About';
 import Projects from './components/ProjectsPage/Projects';
 import Work from './components/WorkPage/Work';
 import Contact from './components/ContactPage/Contact';
+import Navbar from "./components/NavbarPage/Navbar.js";
 // import NotFound from './components/NotFoundPage/NotFound';
 
 //*                           Context
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Navbar />
       <MenuContext.Provider value={{ menuText, setMenuText }}>
         <AnimatePresence exitBeforeEnter>
           <Routes>
