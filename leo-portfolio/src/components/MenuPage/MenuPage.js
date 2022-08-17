@@ -4,7 +4,6 @@ import { MenuContext } from "../../context/MenuContext";
 const MenuPage = () => {
     const { menuText, setMenuText } = useContext(MenuContext);
     return (
-        // List Home, About Me, Projects, Work, Skills, Contact
         <div className="MenuPage">
             <div className="MenuPage__container"
                 onMouseEnter={() => setMenuText("Home")}
@@ -61,10 +60,9 @@ const MenuPage = () => {
                 ) : menuText === "Work" ? (
                     <div className="MenuPage__text">
                         <p className="primaryText menuTextListAnimation">
-                            Work
+                            If you were looking for my work experience, here you go!
                         </p>
                         <p className="secondaryText menuTextListAnimation">
-                            Work
                         </p>
                     </div>
                 ) : null}
