@@ -11,10 +11,13 @@ import About from './components/AboutPage/About';
 import Projects from './components/ProjectsPage/Projects';
 import Work from './components/WorkPage/Work';
 import Contact from './components/ContactPage/Contact';
-import NotFound from './components/NotFoundPage/NotFound';
+// import NotFound from './components/NotFoundPage/NotFound';
 
 //*                           Context
 import { MenuContext } from "./context/MenuContext";
+
+//*                          Styling
+import "./styles/index.scss";
 
 
 function App() {
@@ -38,7 +41,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </AnimatePresence>
       </MenuContext.Provider>
