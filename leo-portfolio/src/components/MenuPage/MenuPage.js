@@ -8,10 +8,10 @@ const MenuPage = () => {
             <div className="MenuPage__container"
                 onMouseEnter={() => setMenuText("Home")}
             >
-                <img src={require("../../assets/images/face.jpg")} alt="my face" className="MenuPage__profile_picture" />
                 {menuText === "Home" || menuText === "" ? (
                     <div className="MenuPage__text">
                         <p className="primaryText menuTextListAnimation">
+                            <img src={require("../../assets/images/face.jpg")} alt="my face" className="MenuPage__profile_picture" />
                             Hello, I'm Leo, your friendly neighborhood web developer. But you can just call
                             me your next hire. It's my ever-growing pleasure to make your acquaintance!
                         </p>
