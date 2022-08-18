@@ -40,32 +40,6 @@ const MenuList = () => {
             </li>
             <li
                 onMouseEnter={() => {
-                    setMenuText("Work")
-                    setIsWorkHovered(true);
-                    setIsProjectHovered(false);
-                    setIsContactHovered(false);
-                    setIsAboutHovered(false);
-                    setIsSkillHovered(false)
-                }
-                }
-                onMouseLeave={() => setMenuText("")}
-                className="MenuList__item"
-            >
-                <Link to="/work" className="MenuList__link">
-                    {isWorkHovered ? (
-                        <p className="primaryText ">
-                            Work
-                        </p>
-                    ) : (
-                        <p className="secondaryText ">
-                            Work
-                        </p>
-                    )}
-                </Link>
-                <div className={isWorkHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
-            </li>
-            <li
-                onMouseEnter={() => {
                     setMenuText("Skills");
                     setIsSkillHovered(true)
                     setIsProjectHovered(false);
@@ -115,6 +89,32 @@ const MenuList = () => {
                     )}
                 </Link>
                 <div className={isProjectHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
+            </li>
+            <li
+                onMouseEnter={() => {
+                    setMenuText("Work")
+                    setIsWorkHovered(true);
+                    setIsProjectHovered(false);
+                    setIsContactHovered(false);
+                    setIsAboutHovered(false);
+                    setIsSkillHovered(false)
+                }
+                }
+                onMouseLeave={() => setMenuText("")}
+                className="MenuList__item"
+            >
+                <Link to="/work" className="MenuList__link">
+                    {isWorkHovered ? (
+                        <p className="primaryText ">
+                            Work
+                        </p>
+                    ) : (
+                        <p className="secondaryText ">
+                            Work
+                        </p>
+                    )}
+                </Link>
+                <div className={isWorkHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
             </li>
             <li
                 onMouseEnter={() => {
