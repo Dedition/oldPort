@@ -11,18 +11,21 @@ import About from './components/AboutPage/About';
 import Projects from './components/ProjectsPage/Projects';
 import Work from './components/WorkPage/Work';
 import Contact from './components/ContactPage/Contact';
-import NotFound from './components/NotFoundPage/NotFound';
+import Navbar from "./components/NavbarPage/Navbar.js";
 
 //*                           Context
 import { MenuContext } from "./context/MenuContext";
 
+//*                          Styling
+import "./styles/index.scss";
+
 
 function App() {
-  // const location = useLocation();
   const [menuText, setMenuText] = useState("Home");
 
   return (
     <BrowserRouter>
+      <Navbar />
       <MenuContext.Provider value={{ menuText, setMenuText }}>
         <AnimatePresence exitBeforeEnter>
           <Routes>
@@ -38,7 +41,6 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
       </MenuContext.Provider>
