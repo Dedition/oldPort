@@ -39,8 +39,8 @@ const Projects = () => {
                     <div className="project">
                         <div className="thumbnail project6">
                             <img
-                                src="/assets/logos/phoenixlogo.png"
-                                alt="Entertainement App icon"
+                                src="/assets/logos/flickrlogo.png"
+                                alt="Flickr clone icon"
                             />
                             <h2>Flickr Clone</h2>
                         </div>
@@ -115,34 +115,33 @@ const Projects = () => {
                     <div className="project">
                         <div className="thumbnail project5">
                             <img
-                                src="/assets/brands/icon-left-font-monochrome-black.png"
-                                alt="Groupomania icon"
+                                src="/assets/brands/facebooklogo.png"
+                                alt="Facebook clone icon"
                             />
                         </div>
                         <div className="thumbnail thumbnailDetails">
                             <div className="textDetails">
-                                <h2>Groupomania</h2>
+                                <h2>Facebook-Cap</h2>
                                 <>
                                     <div className="textDetailsResponsive">
                                         <p>
-                                            Groupomania was my last project, provided by
-                                            OpenClassrooms. This is a small social app for an
-                                            enterprise. You can create your account, write some
-                                            posts with/without images. See, like, and comment other
+                                            Facebook-Cap was my last project mandated by
+                                            appAcademy. This is a small social app mimicking
+                                            some social media functionality.
+                                            You can create your account, write some
+                                            posts with/without images. View, like, and comment on other
                                             people's posts.
+                                            Some features are currently under development so
+                                            may not be shown.
                                         </p>
                                         <p>
                                             This project is a fullstack app. The front part is coded
-                                            with React. Back-end is coded with NodeJS, Express, and
-                                            Sequelize. The database is an SQL database, that I've
-                                            managed with MySQL Workbench, on Windows OS. This app is
-                                            in french, I didn't created an english version yet, so
-                                            you can explore it if you can understand a little bit of
-                                            french. Otherwise, just watch the video. If you see any
-                                            links errors in the console, it's just because I'm using
-                                            a free plan for images, so the server delete each image
-                                            after a certain amount of hours. Otherwise, everything
-                                            is working perfectly.
+                                            with ReactJS and Redux. Back-end is coded with Flask-SQLAlchemy, and
+                                            Python. The database is an SQL database, that I've
+                                            managed with PostgresSQL on MAC OS.
+                                            This apps main focus was to do a completely bug-free project in 3 days
+                                            that would take full advantage of the fullstack development skills I've acquired
+                                            along with a seamless user experience with AWS S3 and sockets.io.
                                         </p>
                                     </div>
                                 </>
@@ -158,7 +157,7 @@ const Projects = () => {
                                             <div className="barHover"></div>
                                         </button>
                                         <button>
-                                            <a href="https://remsb-oc-projet7.vercel.app/">
+                                            <a href="https://facebook-cap.herokuapp.com/">
                                                 Go to website
                                             </a>
                                             <div className="barHover"></div>
@@ -187,7 +186,7 @@ const Projects = () => {
                                         controls={true}
                                     >
                                         <source
-                                            src={"/assets/videos/Groupomania-video.mp4"}
+                                            src={"/assets/videos/facebookdemo.mkv"}
                                             type="video/mp4"
                                         />
                                     </video>
@@ -201,18 +200,22 @@ const Projects = () => {
                         </div>
                         <div className="thumbnail thumbnailDetails">
                             <div className="textDetails">
-                                <h2>Galleria.</h2>
+                                <h2>WhoDis</h2>
                                 <>
                                     <div className="textDetailsResponsive">
                                         <p>
-                                            Galleria, is an art gallery slideshow project, which I'm
-                                            very proud of, because of his very challenging design. I
-                                            love it, and the paintings, obviously.
+                                            WhoDis is a Discord clone that's primary service is as a
+                                            messaging app that allows users to make servers,
+                                            channels inside servers and message their friends through those channels.
+                                            It is heavily inspired by <a href="https://discord.com/">Discord.</a> and was
+                                            created as a collaborative project with a group of
+                                            3 other developers. It was a great challenge to see how well I
+                                            could work in a group of other engineers who have their own
+                                            style of development.
                                         </p>
                                         <p>
-                                            This project was coded with React, and I tried a masonry
-                                            library, for the landing page. All paintings are
-                                            generated dynamically through a JSON file.
+                                            This project was coded with ReactJS, Redux for the frontend and Flask-SQLAlchemy, Python for the backend.
+                                            The database is an SQL database, that I've managed with PostgresSQL on MAC OS.
                                         </p>
                                     </div>
                                 </>
@@ -228,7 +231,7 @@ const Projects = () => {
                                             <div className="barHover"></div>
                                         </button>
                                         <button>
-                                            <a href="https://remsb-galleria-react.vercel.app/">
+                                            <a href="https://who-dis-app.herokuapp.com/">
                                                 Go to website
                                             </a>
                                             <div className="barHover"></div>
@@ -257,7 +260,7 @@ const Projects = () => {
                                         controls={true}
                                     >
                                         <source
-                                            src={"/assets/videos/Galleria-video.mp4"}
+                                            src={"/assets/videos/whodisdemo.mkv"}
                                             type="video/mp4"
                                         />
                                     </video>
