@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 //*                     Files & Components
 import Home from './components/HomePage/Home.js'
 import About from './components/AboutPage/About';
+import Skills from "./components/SkillsPage/Skills.js";
 import Projects from './components/ProjectsPage/Projects';
 import Work from './components/WorkPage/Work';
 import Contact from './components/ContactPage/Contact';
@@ -38,6 +39,7 @@ function App() {
               );
             })}
             <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
