@@ -196,7 +196,7 @@ const Projects = () => {
                     </div>
                     <div className="project">
                         <div className="thumbnail project4">
-                            <img src="/assets/brands/galleria..png" alt="galleria icon" />
+                            <img src="/assets/logos/whodislogo.png" alt="whodis icon" />
                         </div>
                         <div className="thumbnail thumbnailDetails">
                             <div className="textDetails">
@@ -270,24 +270,30 @@ const Projects = () => {
                     </div>
                     <div className="project">
                         <div className="thumbnail project3">
-                            <img src="/assets/brands/thePlanets.png" alt="The Planets icon" />
+                            <img src="/assets/logo/snacklogo.png" alt="The Planets icon" />
                         </div>
                         <div className="thumbnail thumbnailDetails">
                             <div className="textDetails">
-                                <h2>THE PLANETS</h2>
+                                <h2>Snack-Overflow</h2>
                                 <>
                                     <div className="textDetailsResponsive">
                                         <p>
-                                            THE PLANETS, is an 8 pages planets fact site. You will
-                                            learn many things on our solar system. I like this
-                                            project because of all these states to manage for all
-                                            planets, and, I really like this colorful flat design.
+                                            Snack Overflow Premium is a full-snack application to read and
+                                            learn about all of your favorite snacks.
+                                            A user will be able to read and post any inquiries as well as edit and delete their own.
+                                            This application was created as a collaborative project with a group of
+                                            3 other developers. This was actually my very first project and doing it with
+                                            a group of others was incredibly challenging as I was constantly learning how to
+                                            connect the data flow together.
                                         </p>
                                         <p>
-                                            This is my very first project using React. I did it
-                                            during my free time. I wanted to work with data, to use
-                                            differents methods and functions of arrays, so every
-                                            elements are dynamically generated through a JSON file.
+                                            This is my very first project and it was made using
+                                            vanilla JavaScript, HTML, and CSS along with PugJS.
+                                            The backend was a NodeJS server that was created with ExpressJS.
+                                            The database is an SQL database, that I've managed with PostgresSQL on MAC OS.
+                                            A LOT of new skills and small details went into this project and learning how
+                                            to create my own API's and create randomly generated JSON data was
+                                            a great fun experience.
                                         </p>
                                     </div>
 
@@ -304,7 +310,7 @@ const Projects = () => {
                                             <div className="barHover"></div>
                                         </button>
                                         <button>
-                                            <a href="https://planets-fact-site-react.vercel.app/">
+                                            <a href="https://snack-overflow-premium.herokuapp.com/">
                                                 Go to website
                                             </a>
                                             <div className="barHover"></div>
@@ -333,14 +339,14 @@ const Projects = () => {
                                         controls={true}
                                     >
                                         <source
-                                            src={"/assets/videos/theplanets-video.mp4"}
+                                            src={"/assets/videos/snackoverflowdemo.mkv"}
                                             type="video/mp4"
                                         />
                                     </video>
                                 </div>
                             </div>
                         ) : null}
-                    </div>
+                        {/* </div>
                     <div className="project">
                         <div className="thumbnail project2">
                             <img src="/assets/brands/ohmyfood.png" alt="oh my food icon" />
@@ -386,7 +392,7 @@ const Projects = () => {
                                     </div>
                                 </>
                             </div>
-                        </div>
+                        </div> */}
                         {/* {isVideo5Displayed ? (
                             <div
                                 style={{
