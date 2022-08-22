@@ -43,8 +43,8 @@
         animation-fill-mode: forwards;
         animation-delay: 500ms;
         margin-top: 5%;
-        font-size: 5rem;
-        margin-bottom: 5%;
+        font-size: 3.3rem;
+        margin-bottom: 0.5%;
         font-weight: 800;
         padding-bottom: 1.5rem;
         padding-left: 0.25rem;
@@ -93,11 +93,6 @@
         &__js {
             color: #FEDA3E;
 
-            // background-color: #fedb3e34 !important;
-            // animation: skills-Animation;
-            // animation-duration: 125ms;
-            // animation-fill-mode: forwards;
-            // animation-delay: 1000ms;
             &:hover {
                 background-color: #fedb3e34;
                 transition: all 250ms ease;
@@ -107,11 +102,6 @@
         &__sass {
             color: #CB6799;
 
-            // background-color: #cb679934 !important;
-            // animation: skills-Animation;
-            // animation-duration: 125ms;
-            // animation-fill-mode: forwards;
-            // animation-delay: 1250ms;
             &:hover {
                 background-color: #cb679934;
                 transition: all 250ms ease;
@@ -121,11 +111,6 @@
         &__react {
             color: #62DAFC;
 
-            // background-color: #62dbfc34 !important;
-            // animation: skills-Animation;
-            // animation-duration: 125ms;
-            // animation-fill-mode: forwards;
-            // animation-delay: 1500ms;
             &:hover {
                 background-color: #62dbfc34;
                 transition: all 250ms ease;
@@ -141,39 +126,29 @@
             }
         }
 
-        &__mongodb {
-            color: #4B9848;
+        &__aws {
+            color: #FF9900;
 
-            // background-color: #4b984834 !important;
-            // animation: skills-Animation;
-            // animation-duration: 250ms;
-            // animation-fill-mode: forwards;
-            // animation-delay: 2000ms;
             &:hover {
-                background-color: #4b984834;
+                background-color: #676f6756;
                 transition: all 250ms ease;
             }
         }
 
-        &__mysql {
-            color: #036185;
+        &__flask {
+            color: #ffd53b89;
 
-            // background-color: #03608534 !important;
-            // animation: skills-Animation;
-            // animation-duration: 250ms;
-            // animation-fill-mode: forwards;
-            // animation-delay: 2250ms;
             &:hover {
-                background-color: #03608534;
+                background-color: #4b8abe32;
                 transition: all 250ms ease;
             }
         }
 
-        &__vercel {
-            color: #FFFFFF;
+        &__redux {
+            color: #764abc;
 
             &:hover {
-                background-color: #ffffff34;
+                background-color: #8437ff3f;
                 transition: all 250ms ease;
             }
         }
@@ -182,7 +157,7 @@
             color: #41009A;
 
             &:hover {
-                background-color: #40009a34;
+                background-color: #40009a67;
                 transition: all 250ms ease;
             }
         }
@@ -192,6 +167,87 @@
 
             &:hover {
                 background-color: #f4652334;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__docker {
+            color: #0db7ed;
+
+            &:hover {
+                background-color: #38761d34;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__pug {
+            color: rgba(239, 204, 164, 1);
+
+            &:hover {
+                background-color: rgb(86 51 42);
+                transition: all 250ms ease;
+            }
+        }
+
+        &__npm {
+            color: #cb6799;
+
+            &:hover {
+                background-color: #cb679934;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__python {
+            color: #f0652a;
+
+            &:hover {
+                background-color: #f0652a34;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__github {
+            color: #747b82;
+
+            &:hover {
+                background-color: #d7d7d734;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__sequelize {
+            color: #f0652a;
+
+            &:hover {
+                background-color: #f0652a34;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__postgres {
+            color: #f0652a;
+
+            &:hover {
+                background-color: #f0652a34;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__scrum {
+            color: #3c6690;
+
+            &:hover {
+                background-color: #34495e34;
+                transition: all 250ms ease;
+            }
+        }
+
+        &__api {
+            color: #43d1cf;
+
+            &:hover {
+                background-color: #43d1cf34;
                 transition: all 250ms ease;
             }
         }
