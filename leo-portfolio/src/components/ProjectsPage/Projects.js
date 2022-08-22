@@ -115,7 +115,7 @@ const Projects = () => {
                     <div className="project">
                         <div className="thumbnail project5">
                             <img
-                                src="/assets/brands/facebooklogo.png"
+                                src="/assets/logos/facebooklogo.ico"
                                 alt="Facebook clone icon"
                             />
                         </div>
@@ -270,7 +270,7 @@ const Projects = () => {
                     </div>
                     <div className="project">
                         <div className="thumbnail project3">
-                            <img src="/assets/logo/snacklogo.png" alt="The Planets icon" />
+                            <img src="/assets/logos/snacklogo.png" alt="Snack Overflow icon" />
                         </div>
                         <div className="thumbnail thumbnailDetails">
                             <div className="textDetails">
@@ -349,26 +349,18 @@ const Projects = () => {
                         {/* </div>
                     <div className="project">
                         <div className="thumbnail project2">
-                            <img src="/assets/brands/ohmyfood.png" alt="oh my food icon" />
+                            <img src="/assets/" alt="" />
                         </div>
                         <div className="thumbnail thumbnailDetails">
                             <div className="textDetails">
-                                <h2>ohmyfood</h2>
+                                <h2></h2>
                                 <>
                                     <div className="textDetailsResponsive">
                                         <p>
-                                            This is the second project from OpenClassrooms.
-                                            Ohmyfood, is mobile-first app, that allows you to book a
-                                            table in a restaurant and choose your menu before
-                                            arriving, so everything is ready when you come.
+
                                         </p>
                                         <p>
-                                            This project is a multi-pages, mobile-first integration,
-                                            with HTML and CSS. Again, no Javascript. The goal here,
-                                            was to get our hands on CSS animations. And I have to
-                                            admit it, I really loved it. Since I made this project,
-                                            I know that I want to be a creative developer in the
-                                            futur.
+
                                         </p>
                                     </div>
                                 </>
@@ -384,7 +376,7 @@ const Projects = () => {
                                             <div className="barHover"></div>
                                         </button>
                                         <button>
-                                            <a href="https://remy-badji-3-01022022.vercel.app/">
+                                            <a href="">
                                                 Go to website
                                             </a>
                                             <div className="barHover"></div>
@@ -392,144 +384,6 @@ const Projects = () => {
                                     </div>
                                 </>
                             </div>
-                        </div> */}
-                        {/* {isVideo5Displayed ? (
-                            <div
-                                style={{
-                                    zIndex: getVideoDisplayed(5),
-                                }}
-                                className={
-                                    isVideo5Displayed ? "thumbnail thumbnailVideo" : "hidden"
-                                }
-                                onClick={() => {
-                                    setIsVideo5Displayed(false);
-                                }}
-                            >
-                                <div className="videoContainer">
-                                    <video
-                                        autoPlay={true}
-                                        muted={true}
-                                        loop={false}
-                                        controls={true}
-                                    >
-                                        <source
-                                            src={"/assets/videos/ohmyfood-video.mp4"}
-                                            type="video/mp4"
-                                        />
-                                    </video>
-                                </div>
-                            </div>
-                        ) : null}
-                    </div>
-                    <div className="project">
-                        <div className="thumbnail project1">
-                            <img src="/assets/brands/Booki@3x.png" alt="Booki icon" />
-                        </div>
-                        <div className="thumbnail thumbnailDetails">
-                            <div className="textDetails">
-                                <h2>Booki</h2>
-                                <>
-                                    {selectedLanguage === "english" ? (
-                                        <div className="textDetailsResponsive">
-                                            <p>
-                                                Booki was my first project provided by Openclassrooms's
-                                                staff. Booki is a vacations app, where you can search
-                                                for a hotel or a house, in a certain location.
-                                            </p>
-                                            <p>
-                                                This was an integration exercise, with responsive
-                                                design, in HTML and CSS. No Javascript. The goal was to
-                                                test our knowledge in layout, like using flexbox, or
-                                                creating tablet and mobile versions. I wanted to share
-                                                this first project here because I think it's clean and
-                                                cool to review.
-                                            </p>
-                                        </div>
-                                    ) : (
-                                        <div className="textDetailsResponsive">
-                                            <p>
-                                                Booki a été mon premier projet fourni par l'équipe
-                                                d'Openclassrooms. Booki est une application de vacances,
-                                                où vous pouvez rechercher un hôtel ou une maison, dans
-                                                l'endroit souhaité.
-                                            </p>
-                                            <p>
-                                                Il s'agissait d'un exercice d'intégration, avec
-                                                responsive design, en HTML et CSS. Pas de Javascript. Le
-                                                but était de tester nos connaissances dans la mise en
-                                                page, comme l'utilisation de flexbox, ou la création de
-                                                versions pour tablettes et mobiles. Je voulais partager
-                                                ce premier projet ici parce que je pense qu'il est
-                                                propre et cool à examiner.
-                                            </p>
-                                        </div>
-                                    )}
-                                </>
-
-                                <>
-                                    {selectedLanguage === "english" ? (
-                                        <div className="textDetails__buttons">
-                                            <button
-                                                onClick={() => {
-                                                    setIsVideo1Displayed(true);
-                                                }}
-                                            >
-                                                <div>Watch the video</div>
-                                                <div className="barHover"></div>
-                                            </button>
-                                            <button>
-                                                <a href="https://remsb-dw-p2-ressources-booki-fr.vercel.app/">
-                                                    Go to website
-                                                </a>
-                                                <div className="barHover"></div>
-                                            </button>
-                                        </div>
-                                    ) : (
-                                        <div className="textDetails__buttons">
-                                            <button
-                                                onClick={() => {
-                                                    setIsVideo1Displayed(true);
-                                                }}
-                                            >
-                                                <div>Regarder la vidéo</div>
-                                                <div className="barHover"></div>
-                                            </button>
-                                            <button>
-                                                <a href="https://remsb-dw-p2-ressources-booki-fr.vercel.app/">
-                                                    Visiter le site
-                                                </a>
-                                                <div className="barHover"></div>
-                                            </button>
-                                        </div>
-                                    )}
-                                </>
-                            </div>
-                        </div>
-                        {isVideo6Displayed ? (
-                            <div
-                                style={{
-                                    zIndex: getVideoDisplayed(6),
-                                }}
-                                className={
-                                    isVideo6Displayed ? "thumbnail thumbnailVideo" : "hidden"
-                                }
-                                onClick={() => {
-                                    setIsVideo6Displayed(false);
-                                }}
-                            >
-                                <div className="videoContainer">
-                                    <video
-                                        autoPlay={true}
-                                        muted={true}
-                                        loop={false}
-                                        controls={true}
-                                    >
-                                        <source
-                                            src={"/assets/videos/booki-video.mp4"}
-                                            type="video/mp4"
-                                        />
-                                    </video> */}
-                        {/* </div>
                         </div> */}
                     </div>
                 </section>
