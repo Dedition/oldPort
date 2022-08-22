@@ -237,3 +237,36 @@
         margin-bottom: -5rem;
     }
 }
+
+.mainContainerProjects {
+    display: flex;
+    flex-direction: row;
+    width: 95vw !important;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 0 !important;
+    border: 0.1rem solid #252525;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.projectsScroll {
+    opacity: 0;
+    animation: projects-Animation;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    scroll-behavior: smooth;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}
