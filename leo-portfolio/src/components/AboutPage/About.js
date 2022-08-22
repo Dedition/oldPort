@@ -35,6 +35,17 @@ const AboutMePage = () => {
                             What I now bring to the table is a new perspective on the world of
                             business technological needs. I know how business needs and technological solutions
                             can meet to obtain an outcome that is beneficial to everyone involved.
+                            {/* <br /><br />
+                            Technically speaking:
+                            I am experienced in Software Engineering, Web Development, Economics, and Business.
+
+                            <br /><br />
+                            Within my assortment of varied skills, I am also accomplished in leveraging AGILE methodologies
+                            to create and maintain software.
+                            My preferred method of development is
+                            through the use of the Kanban methodology when development time allows for it.
+                            Adversely, I am also a strong believer in the use of the
+                            SCRUM methodology for similar reasons. */}
                         </p>
                     </>
                     <>
@@ -63,7 +74,20 @@ const AboutMePage = () => {
                             solutions architect, a scholar and a leader.
                             I'm not someone who is ashamed of asking for help - but I'm also not
                             someone who is afraid to Google for 10 hours first. <br /><br />
-                            I am your next hire. <br />Contact me and let me know how I can help meet
+                            I am your next hire.
+
+                            <br /><br />
+                            I am experienced in Software Engineering, Web Development, Economics, and Business.
+
+                            <br /><br />
+                            Within my assortment of varied skills, I am also accomplished in leveraging AGILE methodologies
+                            to create and maintain software.
+                            My preferred method of development is
+                            through the use of the Kanban methodology when development time allows for it.
+                            Adversely, I am also a strong believer in the use of the
+                            SCRUM methodology for similar reasons.
+
+                            <br />Contact me and let me know how I can help meet
                             your business needs.
                         </p>
                     </>
