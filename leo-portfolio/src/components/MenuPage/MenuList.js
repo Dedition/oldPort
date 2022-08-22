@@ -116,7 +116,7 @@ const MenuList = () => {
                 </Link>
                 <div className={isWorkHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
             </li> */}
-            <li
+            {/* <li
                 onMouseEnter={() => {
                     setMenuText("Contact");
                     setIsContactHovered(true);
@@ -141,7 +141,7 @@ const MenuList = () => {
                     )}
                 </Link>
                 <div className={isContactHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
-            </li>
+            </li> */}
         </ul>
     );
 }

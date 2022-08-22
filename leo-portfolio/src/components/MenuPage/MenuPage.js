@@ -30,7 +30,9 @@ const MenuPage = () => {
                             with other developers.
                         </p>
                         <p className="secondaryText">
-                            Projects
+                            These projects were all done on a strict deadline where my sole purpose was to
+                            showcase my skills and abilities of completing a seamless full-stack web application
+                            that would be responsive and user-friendly.
                         </p>
                     </div>
                 ) : menuText === "Skills" ? (
@@ -39,7 +41,9 @@ const MenuPage = () => {
                             Here's a selection of my skills and technologies I use in my role as a Software Engineer.
                         </p>
                         <p className="secondaryText">
-                            Skills
+                            I'm fortunate enough to have gained a wide variety of skills and knowledge through
+                            my work as a web developer and this is just a way for me to keep track of all of
+                            the skills I've acquired.
                         </p>
                     </div>
                 ) : menuText === "About" ? (
@@ -49,7 +53,7 @@ const MenuPage = () => {
                             Get to know me a little better.
                         </p>
                         <p className="secondaryText">
-                            About Me
+                            If you want to get an idea of who I am as an individual or a developer, then look no further.
                         </p>
                     </div>
                 ) : menuText === "Contact" ? (

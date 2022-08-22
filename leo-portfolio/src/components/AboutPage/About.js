@@ -33,7 +33,7 @@ const AboutMePage = () => {
                             help them achieve greater heights.
                             <br /><br />Until recently in life, I was one of those individuals.<br /><br />
                             What I now bring to the table is a new perspective on the world of
-                            business technological needs.  I know how business needs and technological solutions
+                            business technological needs. I know how business needs and technological solutions
                             can meet to obtain an outcome that is beneficial to everyone involved.
                         </p>
                     </>
