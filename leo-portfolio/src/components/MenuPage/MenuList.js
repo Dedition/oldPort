@@ -27,7 +27,7 @@ const MenuList = () => {
                 <Link to="/about" className="MenuList__link">
                     {isAboutHovered ? (
                         <p className="primaryText ">
-                            About
+                            About Me
                         </p>
                     ) : (
                         <p className="secondaryText ">
@@ -90,7 +90,7 @@ const MenuList = () => {
                 </Link>
                 <div className={isProjectHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
             </li>
-            <li
+            {/* <li
                 onMouseEnter={() => {
                     setMenuText("Work")
                     setIsWorkHovered(true);
@@ -100,22 +100,22 @@ const MenuList = () => {
                     setIsSkillHovered(false)
                 }
                 }
-                onMouseLeave={() => setMenuText("")}
+                onMouseLeave={() => setMenuText("Work")}
                 className="MenuList__item"
             >
                 <Link to="/work" className="MenuList__link">
                     {isWorkHovered ? (
                         <p className="primaryText ">
-                            Work
+                            My Resume
                         </p>
                     ) : (
                         <p className="secondaryText ">
-                            Work
+                            Resume
                         </p>
                     )}
                 </Link>
                 <div className={isWorkHovered ? "MenuList__indicator" : "MenuList__indicator--hidden"}></div>
-            </li>
+            </li> */}
             <li
                 onMouseEnter={() => {
                     setMenuText("Contact");
@@ -132,7 +132,7 @@ const MenuList = () => {
                 <Link to="/contact" className="MenuList__link">
                     {isContactHovered ? (
                         <p className="primaryText">
-                            Contact
+                            Contact Me
                         </p>
                     ) : (
                         <p className="secondaryText">

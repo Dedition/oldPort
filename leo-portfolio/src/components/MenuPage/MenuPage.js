@@ -19,6 +19,9 @@ const MenuPage = () => {
                             I'm a full-stack web developer with a passion for creating
                             beautiful, responsive websites.
                         </p>
+                        <a className="resume-download" href="./assets/Resume.docx" download>
+                            My Resume
+                        </a>
                     </div>
                 ) : menuText === "Projects" ? (
                     <div className="MenuPage__text">
@@ -61,7 +64,7 @@ const MenuPage = () => {
                 ) : menuText === "Work" ? (
                     <div className="MenuPage__text">
                         <p className="primaryText menuTextListAnimation">
-                            If you were looking for my work experience, here you go!
+                            If you were looking for my work experience/resume, <a href="./assets/Resume.docx" download>here you go!</a>
                         </p>
                         <p className="secondaryText">
                         </p>
