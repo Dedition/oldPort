@@ -39,7 +39,7 @@ const Projects = () => {
                     <div className="project">
                         <div className="thumbnail project6">
                             <img
-                                src="/assets/brands/logo.svg"
+                                src="/assets/logos/phoenixlogo.png"
                                 alt="Entertainement App icon"
                             />
                             <h2>Flickr Clone</h2>
@@ -50,19 +50,17 @@ const Projects = () => {
                                 <>
                                     <div className="textDetailsResponsive">
                                         <p>
-                                            This app, allows you to create an account, and search
-                                            for some fake movies or TV shows. You can add everything
-                                            you want to your favorites, then find it in your
-                                            bookmarked shows.
+                                            The FlickrClone is a website for users to upload and browse images about anything they want.
+                                            It is heavily inspired by <a href="https://flickr.com/">Flickr.</a>
                                         </p>
                                         <p>
-                                            I did this little fullstack app during my free-time,
-                                            just to revise what I've learned this year. Front-End is
-                                            coded with React. Back-End is coded with NodeJS,
-                                            Express, and Sequelize. The database is an SQL database,
-                                            that I've managed with MySQL Workbench, on Windows OS.
-                                            All of the images are stock in the front part, because I
-                                            didn't wanted to invest in any service.
+                                            I  did this fullstack application on a deadline of 5 days and
+                                            it was a great challenge to see how well I understood
+                                            React, Redux and REST API's.
+                                            Frontend is built with React. Backend is built with NodeJS,
+                                            Express, and Sequelize. The relational database management
+                                            system is a SQL database, that I've managed with
+                                            PostgresSQL on MAC OS.
                                         </p>
                                     </div>
                                 </>
@@ -77,7 +75,7 @@ const Projects = () => {
                                             <div className="barHover"></div>
                                         </button>
                                         <button>
-                                            <a href="https://remsb-entertainement-app-front.vercel.app/">
+                                            <a href="https://flickrpixelclone.herokuapp.com/">
                                                 Go to website
                                             </a>
                                             <div className="barHover"></div>
@@ -106,7 +104,7 @@ const Projects = () => {
                                         controls={true}
                                     >
                                         <source
-                                            src={"/assets/videos/entertainement-video.mp4"}
+                                            src={"/assets/videos/flickrdemo.mkv"}
                                             type="video/mp4"
                                         />
                                     </video>
