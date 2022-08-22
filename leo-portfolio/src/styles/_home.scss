@@ -203,3 +203,35 @@
         position: absolute;
     }
 }
+
+.resume-download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px;
+    border: 0.1rem solid #252525;
+    margin-top: 3rem;
+    font-family: "Montserrat-Light", sans-serif;
+    font-size: 2rem;
+    align-self: center;
+    justify-content: center;
+    background-color: #252525;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    animation: menuTextHome;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.resume-download {
+    &:hover {
+        background-color: #b0aeae46;
+        color: brown;
+        border: 0.1rem solid #252525;
+    }
+}
