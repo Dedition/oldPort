@@ -48,7 +48,7 @@ const Projects = () => {
                             <div className="textDetails">
                                 <h2>Flickr Clone</h2>
                                 <>
-                                    <div className="textDetailsResponsive">
+                                    <div className="responsiveText">
                                         <p>
                                             The FlickrClone is a website for users to upload and browse images about anything they want.
                                             It is heavily inspired by <a href="https://flickr.com/">Flickr.</a>
@@ -123,7 +123,7 @@ const Projects = () => {
                             <div className="textDetails">
                                 <h2>Facebook-Cap</h2>
                                 <>
-                                    <div className="textDetailsResponsive">
+                                    <div className="responsiveText">
                                         <p>
                                             Facebook-Cap was my last project mandated by
                                             appAcademy. This is a small social app mimicking
@@ -202,7 +202,7 @@ const Projects = () => {
                             <div className="textDetails">
                                 <h2>WhoDis</h2>
                                 <>
-                                    <div className="textDetailsResponsive">
+                                    <div className="responsiveText">
                                         <p>
                                             WhoDis is a Discord clone that's primary service is as a
                                             messaging app that allows users to make servers,
@@ -276,7 +276,7 @@ const Projects = () => {
                             <div className="textDetails">
                                 <h2>Snack-Overflow</h2>
                                 <>
-                                    <div className="textDetailsResponsive">
+                                    <div className="responsiveText">
                                         <p>
                                             Snack Overflow Premium is a full-snack application to read and
                                             learn about all of your favorite snacks.
@@ -355,7 +355,7 @@ const Projects = () => {
                             <div className="textDetails">
                                 <h2></h2>
                                 <>
-                                    <div className="textDetailsResponsive">
+                                    <div className="responsiveText">
                                         <p>
 
                                         </p>
