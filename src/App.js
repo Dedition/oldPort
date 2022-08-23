@@ -10,7 +10,7 @@ import Home from './components/HomePage/Home.js'
 import About from './components/AboutPage/About';
 import Skills from "./components/SkillsPage/Skills.js";
 import Projects from './components/ProjectsPage/Projects';
-import Work from './components/WorkPage/Work';
+// import Work from './components/WorkPage/Work';
 import Contact from './components/ContactPage/Contact';
 import Navbar from "./components/NavbarPage/Navbar.js";
 
