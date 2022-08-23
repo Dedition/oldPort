@@ -25,7 +25,7 @@ function App() {
   const [menuText, setMenuText] = useState("Home");
 
   return (
-    <HashRouter base="/">
+    <BrowserRouter>
       <Navbar />
       <MenuContext.Provider value={{ menuText, setMenuText }}>
         <AnimatePresence exitBeforeEnter>
@@ -46,7 +46,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </MenuContext.Provider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
