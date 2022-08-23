@@ -1,6 +1,6 @@
 //*                           React
 import { useState } from "react";
-import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 //*                       React Libraries
 import { AnimatePresence } from "framer-motion";
@@ -25,7 +25,7 @@ function App() {
   const [menuText, setMenuText] = useState("Home");
 
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <MenuContext.Provider value={{ menuText, setMenuText }}>
         <AnimatePresence exitBeforeEnter>
@@ -46,7 +46,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </MenuContext.Provider>
-    </BrowserRouter>
+    </>
   );
 }
 
